@@ -1,6 +1,8 @@
 @import url(templates/font.css);
 @import url(templates/icon.css);
 @import url(templates/navbar.css);
+@import url(templates/form.css);
+@import url(templates/list.css);
 
 body{
     background-color: #F2F9FF;

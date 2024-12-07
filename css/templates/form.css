@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    font-size: 12px;
 }
 
 .form-input{
@@ -11,4 +12,31 @@
     justify-content: center;
     align-items: center;
     margin: 8px;
+
+}
+
+.form-input input{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    margin-bottom: 8px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #3498DB;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    margin: 8px 4px;
+}
+
+#form-title{
+    font-size: 24px;
+    margin-bottom: 16px;
+    text-align: center;
 }
