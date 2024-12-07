@@ -1,0 +1,10 @@
+@import url(templates/font.css);
+@import url(templates/icon.css);
+@import url(templates/navbar.css);
+
+body{
+    background-color: #F2F9FF;
+    font-family: "Noto", sans;
+    padding: 0;
+    margin: 0;
+};
