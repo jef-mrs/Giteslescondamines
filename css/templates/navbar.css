@@ -1,12 +1,14 @@
 .navbar{
-    background-color: #FDF7F4;
+    background-color: #222831;
+    color:#EEEEEE;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
 }
 
+
 .navbar a{
-    color: black;
+    color:#EEEEEE;
     text-decoration: none;
 }

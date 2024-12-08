@@ -12,7 +12,7 @@
     padding: 16px;
     border-radius: 8px;
     width: 300px;
-    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 24px 0 rgb(49, 54, 63, 0.1);
 }
 
 .list-item h4{

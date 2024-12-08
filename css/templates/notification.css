@@ -1,0 +1,15 @@
+.notification{
+    width:300px;
+    font-size: 12px;
+    background-color: rgb(118, 171, 174, 0.3);
+    color:31363F;
+    z-index: 999;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 4px;
+    padding: 8px;
+    box-shadow: 0 0 26px 0 rgb(49, 54, 63, 0.1);
+    text-align: center;
+
+}

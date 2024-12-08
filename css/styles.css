@@ -3,10 +3,13 @@
 @import url(templates/navbar.css);
 @import url(templates/form.css);
 @import url(templates/list.css);
+@import url(templates/notification.css);
 
 body{
-    background-color: #F2F9FF;
+    background-color: #EEEEEE;
     font-family: "Noto", sans;
     padding: 0;
     margin: 0;
 };
+
+
