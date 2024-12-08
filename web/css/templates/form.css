@@ -26,6 +26,13 @@
 
 }
 
+btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 .btn {
     padding: 10px 20px;
     background-color: rgb(118, 171, 174, 0.8);
@@ -40,13 +47,11 @@
     text-decoration: none;
     margin: 8px 4px;
     font-weight: bolder;
-    font-size: 12px;
+    font-size: 20px;
 }
-btns{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+
+.btn-rotate{
+    transform: rotateY(180deg);
 }
 
 #form-title{

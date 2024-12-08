@@ -19,12 +19,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agenda Electronic</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="web/css/styles.css">
 
 </head>
 <body>
     <p class="notification"><?php echo $message; ?></p>
-    <?php include 'src/view/template/navbar.php'; ?>
+    <?php include 'web/view/template/navbar.php'; ?>
     <h1 id="list-title">Liste des contacts</h1>
     <?php if(isset($contacts) AND !empty($contacts)): ?>
         <div class="list">

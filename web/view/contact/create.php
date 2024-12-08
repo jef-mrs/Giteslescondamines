@@ -23,7 +23,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agenda Electronic</title>
-    <link rel="stylesheet" href="../../../css/styles.css">
+    <link rel="stylesheet" href="/electronikAgenda/web/css/styles.css">
 </head>
 <body>
     <?php if(!empty($response)): ?>
@@ -51,9 +51,10 @@
             <input class="material-symbols-outlined" type="text" id="entreprise" name="entreprise" placeholder="source_environment" required>
         </div>
         <div  class='btns'>
-            <input class="btn" type="submit" value="Enregistrer">     
-            <a class="btn" href="/electronikAgenda/index.php">Retour à la liste des contacts</a>
+            <input class="btn material-symbols-outlined" type="submit" value="save">     
+            <a class="btn btn-rotate material-symbols-outlined" href="/electronikAgenda/index.php">redo</a>
         </div>
     </form>
 </body>
 </html>
+
