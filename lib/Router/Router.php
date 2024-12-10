@@ -1,6 +1,7 @@
 <?php 
 
 namespace Components\Router;
+
 require dirname(__dir__, 2).'/config/routes.php';
 
 class Router {
@@ -12,7 +13,7 @@ class Router {
     public function __construct() {
         $this->routes = ROUTES;
         $this->availablePaths = array_keys($this->routes);
-        $this->requestedPath = isset($_GET['path']) ? $_GET['path']:'/';
+        $this->requestedPath = isset($_GET['path']) ? $_GET['path']: '/';
         $this->parseRoutes();
     }
 
@@ -21,8 +22,10 @@ class Router {
         $params = [];
 
         foreach ($this->availablePaths as $candidatePath) {
+
             $foundMatch = true;
             $explodedCandidatePath = $this->explodePath($candidatePath);
+
             if(count($explodedCandidatePath) == count($explodeRequestedPath)){
                 foreach ($explodeRequestedPath as $key => $requestedPathPart ){
                     $candidatePathPart = $explodedCandidatePath[$key];
@@ -40,14 +43,16 @@ class Router {
             }
         }
         
-        if(isset($route)){
+
+        if(isset($routes)){
             $controller = new $route['controller'];
             $controller->{$route['method']}(...$params);
+            
         }
     }
 
     private function explodePath(string $path): array {
-        return explode('/', rtrim(ltrim($path, '/', '/')));
+        return explode("/", rtrim(ltrim($path, '/'), '/'));
     }
 
     private function isParam(string $candidatePathPart): bool {

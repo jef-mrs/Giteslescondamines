@@ -1,10 +1,12 @@
 <?php 
-
-
-    require dirname(__DIR__).'lib/autoload.php';
-    // use Components\Router\Router;
-    // new Router();
     
- 
+    use Components\Router\Router;
+
+    
+    require dirname(__DIR__).'/lib/autoload.php';
+    $router = new Router();
+    
+
+
 
 ?>
