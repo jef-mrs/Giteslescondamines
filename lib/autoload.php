@@ -18,9 +18,9 @@ spl_autoload_register(function(string $class): void {
     $filepath = dirname(__DIR__).'/'.implode('/',$namespaceParts).'.php';
     if(!file_exists($filepath)){
         throw new Exception('Fichier "'.$filepath.'" introuvablepour la classe " '.$class.' ". Verifier le chemin, le nom de la classe ou le namespace ');
-    } else {
-        require_once $filepath;
-    }
+    } 
+    require_once $filepath;
+    
 });
 
 ?>
