@@ -17,7 +17,9 @@ class Router {
         $this->parseRoutes();
     }
 
+    
     private function parseRoutes(): void {
+
         $explodeRequestedPath = $this->explodePath($this->requestedPath);
         $params = [];
 
@@ -25,6 +27,7 @@ class Router {
 
             $foundMatch = true;
             $explodedCandidatePath = $this->explodePath($candidatePath);
+            $route = [];
 
             if(count($explodedCandidatePath) == count($explodeRequestedPath)){
                 foreach ($explodeRequestedPath as $key => $requestedPathPart ){
@@ -43,11 +46,10 @@ class Router {
             }
         }
         
-
-        if(isset($routes)){
-            $controller = new $route['controller'];
+        if(isset($route)){
+            $controller = new $route['controller']; 
             $controller->{$route['method']}(...$params);
-            
+              
         }
     }
 
