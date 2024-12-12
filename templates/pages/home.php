@@ -11,4 +11,5 @@
             Dans une ambiance bucolique, vous trouverez calme, harmonie et douceur de vivre durant votre séjour et partagerez ce rythme si cher aux Provençaux, fait de nonchalance, spontanéité et chaleur humaine. 
         </p>
     </div>
+    <a href="?path=flats/new" class="btn">Ajouter logement</a>
 </div>
