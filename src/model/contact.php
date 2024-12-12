@@ -7,7 +7,9 @@
         private $prenom;
         private $email;
         private $telephone;
-        private $entreprise;
+        private $message;
+    
+            const TABLE_NAME = "contact";
 
         //Column Id
         public function getId() {
@@ -50,13 +52,13 @@
             $this->telephone = $telephone;
         }
 
-        //column entreprise
-        public function getEntreprise() {
-            return $this->entreprise;
+        //column message
+        public function getMessage() {
+            return $this->message;
         }
 
-        public function setEntreprise($entreprise) {
-            $this->entreprise = $entreprise;
+        public function setEntreprise($message) {
+            $this->message= $message;
         }
 
 
