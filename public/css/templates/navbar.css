@@ -1,14 +1,42 @@
 .navbar{
-    background-color: #222831;
+    background: linear-gradient(#ffa600, 5%, #92ba92);
     color:#EEEEEE;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
+    padding: 0px 20px;
+    height: 24vh;
+    margin: 0;
+    margin-top: 1vh;
+}
+
+.navbar-title{
+    flex-grow: 1;
+    text-align: center;
+
+}
+
+.navbar-title h1, h2{
+    font-weight: bolder;
+    font-family: "Ephesis";
+    margin: 0;
+}
+
+.navbar-title h1{
+    font-size: 60px;
+
+}
+
+.navbar-title h2{   
+    font-size: 44px;
+    
 }
 
 
 .navbar a{
     color:#EEEEEE;
     text-decoration: none;
+}
+
+.navbar-menu{
+    margin-top: 12px;
 }
