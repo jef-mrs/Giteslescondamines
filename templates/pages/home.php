@@ -12,4 +12,7 @@
         </p>
     </div>
     <a href="?path=flats/new" class="btn">Ajouter logement</a>
+    <?php if(isset($_GET['reponse'])) :?>
+        <div class="notification"><?php echo $_GET['reponse'] ?></div>
+    <?php endif ?>
 </div>

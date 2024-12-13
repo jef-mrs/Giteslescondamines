@@ -9,8 +9,8 @@
         private function connect() {
             // Implementation de la connexion à la base de données
             $db = new \PDO(
-                "mysql:host=".DB_INFOS['host'].";port=".DB_INFOS['PORT'].";dbname=".DB_INFOS['dbname'],
-                DB_INFOS['username'],
+                "mysql:host=".DB_INFOS['host'].";port=".DB_INFOS['port'].";dbname=".DB_INFOS['dbname'],
+                DB_INFOS['user'],
                 DB_INFOS['password']
             );
             $db->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
@@ -79,7 +79,7 @@
         }
 
         protected function create(string $class, array $fields): \PDOStatement {
-            $query = "INSERT INTO " . $this->getTableName($class) . " (";
+            $query = "INSERT INTO ".$this->getTableName($class)." (";
             foreach (array_keys($fields) as $field) {
                 $query .= $field;
                 if ($field != array_key_last($fields)) $query .= ', ';

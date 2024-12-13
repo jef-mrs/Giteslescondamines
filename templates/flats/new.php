@@ -1,4 +1,4 @@
-<form action="?path=flats/create" method="post" class="form">
+<form action="?path=/flats/create" method="post" class="form">
         <div class="form-input">
             <input type="text" id="name" name="name" placeholder="Nom" required>
         </div>

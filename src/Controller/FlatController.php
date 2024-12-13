@@ -8,7 +8,7 @@ use App\Manager\FlatManager;
 class FlatController extends AbstractController {
 
     public function new() {
-        $this->renderView('flats/new.php', ['title' => 'Nouvelle maison']);
+       return $this->renderView('flats/new.php', ['title' => 'Nouvelle maison']);
     }
 
     public function create() {
@@ -19,14 +19,14 @@ class FlatController extends AbstractController {
             $flatManager = new FlatManager();
             $flat->setName($_POST['name']);
             $flat->setDescription($_POST['description']);
-            var_dump($flat);
+            if($flatManager->add($flat)){
 
-            $flatManager->add($flat);
-
-            $this->redirectToRoute('/', ['response' => 'Logement créée avec succès']);
+                return $this->redirectToRoute('/', ['reponse' => 'Logement créée avec succès']);
+            }
 
         }
-        $this->redirectToRoute('/');
+        
+        return $this->renderView('flats/new.php', ['title' => 'Nouvelle maison']);
     }
 }
 
