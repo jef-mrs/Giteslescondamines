@@ -42,3 +42,10 @@
     padding: 0 12px;
     line-height: 24px;
 }
+
+.title {
+    font-size: 24px;
+    margin: 12px 24px;
+    color: rgba(0, 0, 0, 0.1);
+    text-shadow: 0 0 12px 0 rgb(49, 54, 63, 0.9);
+}

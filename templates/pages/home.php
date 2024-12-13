@@ -11,6 +11,9 @@
             Dans une ambiance bucolique, vous trouverez calme, harmonie et douceur de vivre durant votre séjour et partagerez ce rythme si cher aux Provençaux, fait de nonchalance, spontanéité et chaleur humaine. 
         </p>
     </div>
+
+    <h3 class="title">Nos logements</h3>
+    
     <a href="?path=flats/new" class="btn">Ajouter logement</a>
     <?php if(isset($_GET['reponse'])) :?>
         <div class="notification"><?php echo $_GET['reponse'] ?></div>

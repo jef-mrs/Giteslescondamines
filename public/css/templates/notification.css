@@ -1,7 +1,7 @@
 .notification{
     width:300px;
     font-size: 12px;
-    background-color: rgb(118, 171, 174, 0.3);
+    background-color: rgb(118, 171, 174, 0.6);
     color:31363F;
     z-index: 999;
     position: absolute;

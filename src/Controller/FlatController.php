@@ -8,6 +8,7 @@ use App\Manager\FlatManager;
 class FlatController extends AbstractController {
 
     public function new() {
+
        return $this->renderView('flats/new.php', ['title' => 'Nouvelle maison']);
     }
 
@@ -27,6 +28,12 @@ class FlatController extends AbstractController {
         }
         
         return $this->renderView('flats/new.php', ['title' => 'Nouvelle maison']);
+    }
+
+    public function index() {
+        $flatManager = new FlatManager();
+        $flats = $flatManager->findAll();
+        return $this->renderView('flats/index.php', ['title' => 'Liste des logements', 'flats' => $flats]);
     }
 }
 

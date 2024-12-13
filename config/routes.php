@@ -16,6 +16,13 @@ const ROUTES = [
         'method' => 'create'
     ],
 
+
+    'flats' => [
+        'controller' => App\Controller\FlatController::class,
+        'method' => 'index'
+    ]
+
+
 ];
 
 ?>
