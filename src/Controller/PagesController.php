@@ -9,9 +9,8 @@ class PagesController extends AbstractController {
     public function home() {
         // Récupération des données des logements
         $flatManager = new FlatManager();
-        $flats = $flatManager->findAll();
         
-        return $this->renderView('pages/home.php', ['title' => 'Homepage', 'flats' => $flats]);
+        return $this->renderView('pages/home.php', ['flats' => $flatManager->findAll()]);
        
     }
 }

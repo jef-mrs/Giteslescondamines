@@ -4,7 +4,7 @@
         <a class="navbar-menu-item "href="/">
             <span class="">Acceuil</span>
         </a>
-        <a class="navbar-menu-item "href="/">
+        <a class="navbar-menu-item "href="/?path=flats">
             <span class="">Nos Gites</span>
         </a>
         <a class="navbar-menu-item "href="/">

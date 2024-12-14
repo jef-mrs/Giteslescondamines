@@ -33,7 +33,9 @@ class FlatController extends AbstractController {
     public function index() {
         $flatManager = new FlatManager();
         $flats = $flatManager->findAll();
-        return $this->renderView('flats/index.php', ['title' => 'Liste des logements', 'flats' => $flats]);
+        return $this->renderView('flats/index.php', [
+                                'flats' => $flatManager->findAll()
+                                ]);
     }
 }
 

@@ -13,7 +13,23 @@
     </div>
 
     <h3 class="title">Nos logements</h3>
-    
+    <?php var_dump($_GET('flats')) ?>
+    <div class="cards">
+        <?php if($_GET('flats') !== NULL) :?>
+            <?php $flats = $_GET('flats') ?>
+            <?php foreach($flats as $flat) :?>
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title"><?php echo $flat->getName()?></h4>
+                        <p class="card-text"><?php echo $flat->getDescription()?></p>
+                        <a href="?path=flats/show&id=<?php echo $flat->getId()?>" class="btn">Voir plus</a>
+                    </div>
+                </div>
+            <?php endforeach?>
+        <?php else :?>
+            <p class="intro-texte">Aucun logement disponible</p>
+        <?php endif ?>
+    </div>
     <a href="?path=flats/new" class="btn">Ajouter logement</a>
     <?php if(isset($_GET['reponse'])) :?>
         <div class="notification"><?php echo $_GET['reponse'] ?></div>
